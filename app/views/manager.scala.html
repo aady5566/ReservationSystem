@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/manager_style.css")">
+    <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <script src="@routes.Assets.versioned("javascripts/jquery-1.11.3.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/manager_js.js")" type="text/javascript"></script>
+</head>
+<br>
+<body>
+<header>
+    <h1>Reservation System</h1>
+    <p id="warn">(This web cannot support IE completely.)</p>
+</header>
+<!--<form action="1.php" method="post" id="connect" name="check"> -->
+<form method="post" id="connect" enctype='application/json' onsubmit="tranSub();">
+<h3>Title:</h3>
+<input type="text" name="title" form="connect" ><br/>
+<h3>Content:</h3>
+<textarea name="content" rows="20" cols="40" form="connect" ></textarea><br/>
+<h3>Name:</h3>
+<input type="text" name="name" form="connect" ><br/>
+<h3>Phone:</h3>
+<input type="text" name="phone" form="connect" ><br/>
+<h3>Email:</h3>
+<input type="email" name="email" ><br/>
+<h3>Date:</h3>
+    <div id="dynamicInput">
+        <input id="arrivalDate" type='datetime-local' name='d[0]'  form='connect' required>
+        <input type='hidden' id='timestamp' name="t[0]" form='connect'>
+    </div>
+</form>
+    <input type="button" value="Add another date" onClick="addInput('dynamicInput');" form="connect">
+    <input type="submit" value="Submit" name="sub" form="connect"/>
+
+</body>
+</html>
