@@ -10,7 +10,9 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  specs2 % Test
+  specs2 % Test,
+  "com.amazonaws" % "aws-java-sdk-dynamodb" % "1.10.39",
+  "com.amazonaws" % "aws-java-sdk-iam" % "1.10.39"
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"

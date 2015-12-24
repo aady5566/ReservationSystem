@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/apple/Documents/HTML/reservationSystem/ReservationSystem-master/conf/routes
-// @DATE:Mon Dec 07 16:42:56 HKT 2015
+// @SOURCE:C:/opt/WorkSpaceForScala/reservationsystem/conf/routes
+// @DATE:Wed Dec 16 23:01:06 GMT+08:00 2015
 
 package controllers;
 

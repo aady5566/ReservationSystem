@@ -39,27 +39,27 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <h1>Reservation System</h1>
     <p id="warn">(This web cannot support IE completely.)</p>
 </header>
-<!--<form action="1.php" method="post" id="connect" name="check"> -->
 <form method="post" id="connect" enctype='application/json' onsubmit="tranSub();">
-<h3>Title:</h3>
-<input type="text" name="title" form="connect" ><br/>
-<h3>Content:</h3>
-<textarea name="content" rows="20" cols="40" form="connect" ></textarea><br/>
-<h3>Name:</h3>
-<input type="text" name="name" form="connect" ><br/>
-<h3>Phone:</h3>
-<input type="text" name="phone" form="connect" ><br/>
-<h3>Email:</h3>
-<input type="email" name="email" ><br/>
-<h3>Date:</h3>
-    <div id="dynamicInput">
-        <input id="arrivalDate" type='datetime-local' name='d[0]'  form='connect' required>
-        <input type='hidden' id='timestamp' name="t[0]" form='connect'>
-    </div>
 </form>
-    <input type="button" value="Add another date" onClick="addInput('dynamicInput');" form="connect">
-    <input type="submit" value="Submit" name="sub" form="connect"/>
-
+<h3>Title:</h3>
+<input type="text" name="title" form="connect" required><br/>
+<h3>Content:</h3>
+<textarea name="content" rows="20" cols="40" form="connect" required></textarea><br/>
+<h3>Name:</h3>
+<input type="text" name="name" form="connect" required><br/>
+<h3>Phone:</h3>
+<input type="text" name="phone" form="connect" required><br/>
+<h3>Email:</h3>
+<input type="email" name="email" form=connect required><br/>
+<h3>Date:</h3>
+<div id="dynamicInput">
+    <div id=removedate_0></br>
+        <input type='datetime-local' name='d[0]' form='connect'>
+        <input type='hidden' id='timestamp' name='t[0]' form='connect'>
+        <input type=button id=more_fields"+(counter)+" onclick=removeDate(0); value='Remove' ></div>
+</div>
+<input type="button" value="addDate" onClick="addInput('dynamicInput');" form="connect">
+<input type="submit" value="Submit" name="sub" form="connect"/>
 </body>
 </html>"""))
       }
@@ -81,10 +81,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object manager extends manager_Scope0.manager
               /*
                   -- GENERATED --
-                  DATE: Sat Dec 12 20:33:37 HKT 2015
-                  SOURCE: /Users/apple/Documents/HTML/reservationSystem/ReservationSystem-master/app/views/manager.scala.html
-                  HASH: 590efdcbaaad25e86a16138740c0e442e1bfe84e
-                  MATRIX: 613->0|775->136|789->142|860->192|1104->410|1118->416|1191->469|1271->522|1286->528|1353->574
+                  DATE: Wed Dec 16 23:01:07 GMT+08:00 2015
+                  SOURCE: C:/opt/WorkSpaceForScala/reservationsystem/app/views/manager.scala.html
+                  HASH: 886cbce64dc4d0ba6da10dc1a616eb1e8fa2a199
+                  MATRIX: 613->0|780->141|794->147|865->197|1112->418|1126->424|1199->477|1280->531|1295->537|1362->583
                   LINES: 25->1|30->6|30->6|30->6|33->9|33->9|33->9|34->10|34->10|34->10
                   -- GENERATED --
               */

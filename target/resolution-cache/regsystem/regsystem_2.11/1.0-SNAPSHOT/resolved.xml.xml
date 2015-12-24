@@ -4,7 +4,7 @@
 		module="regsystem_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151212202733"
+		publication="20151224101516"
 	>
 		<description>
 		RegSystem
@@ -43,5 +43,7 @@
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.4" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.4.4" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.4.4" conf="test->default(compile)"/>
+		<dependency org="com.amazonaws" name="aws-java-sdk-dynamodb" rev="1.10.39" conf="compile->default(compile)"/>
+		<dependency org="com.amazonaws" name="aws-java-sdk-iam" rev="1.10.39" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
