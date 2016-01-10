@@ -4,7 +4,7 @@
 		module="regsystem_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151224101516"
+		publication="20160110110848"
 	>
 		<description>
 		RegSystem

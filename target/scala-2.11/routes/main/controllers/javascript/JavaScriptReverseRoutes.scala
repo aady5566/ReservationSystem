@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/opt/WorkSpaceForScala/reservationsystem/conf/routes
-// @DATE:Wed Dec 16 23:01:06 GMT+08:00 2015
+// @SOURCE:/Volumes/jetD_YD/ReservationSystem/conf/routes
+// @DATE:Sun Jan 10 12:08:59 HKT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -28,6 +28,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "manager"})
+        }
+      """
+    )
+  
+    // @LINE:15
+    def send: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Producer.send",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "send.scala.html"})
         }
       """
     )

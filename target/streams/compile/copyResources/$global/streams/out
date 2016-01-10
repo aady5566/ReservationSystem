@@ -1,4 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(C:\opt\WorkSpaceForScala\reservationsystem\conf\application.conf,C:\opt\WorkSpaceForScala\reservationsystem\target\scala-2.11\classes\application.conf)[0m
-[0m[[0mdebug[0m] [0m	(C:\opt\WorkSpaceForScala\reservationsystem\conf\logback.xml,C:\opt\WorkSpaceForScala\reservationsystem\target\scala-2.11\classes\logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(C:\opt\WorkSpaceForScala\reservationsystem\conf\routes,C:\opt\WorkSpaceForScala\reservationsystem\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(/Volumes/jetD_YD/ReservationSystem/conf/application.conf,/Volumes/jetD_YD/ReservationSystem/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Volumes/jetD_YD/ReservationSystem/conf/logback.xml,/Volumes/jetD_YD/ReservationSystem/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Volumes/jetD_YD/ReservationSystem/conf/routes,/Volumes/jetD_YD/ReservationSystem/target/scala-2.11/classes/routes)[0m

@@ -1,0 +1,32 @@
+body {
+    background-color:white;
+    /*border: 2px solid rgb(207,207,207);
+     padding: 10px 10px 10px 10px;
+     margin-left: 10%;
+     margin-right: 10%;*/
+    margin-left:10%;
+
+}
+h1{
+  font-family: 'Megrim', cursive;
+  font-size: 80px;
+  text-shadow: 5px 5px 5px #aaa;
+  margin-left:20%;
+}
+#warn{
+  color: rgb(178,18,11);
+  margin-left:60%;
+}
+#deleteInfo{
+  color: rgb(178,18,11);
+  margin-left:0%;
+}
+
+h3{
+    /*background:url('images/boardwalk-in-taiwan.jpg');
+    background-size: cover;
+    height: 606px;*/
+    color: rbg(90,90,90);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}

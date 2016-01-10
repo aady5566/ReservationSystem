@@ -55,10 +55,10 @@ Seq[Any](format.raw/*1.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Dec 16 23:01:07 GMT+08:00 2015
-                  SOURCE: C:/opt/WorkSpaceForScala/reservationsystem/app/views/main.scala.html
-                  HASH: 4f279872942b58435e4c62b8c7d802ac00ccda1e
-                  MATRIX: 530->1|655->31|683->33|772->96|797->101|886->164|900->170|962->211|1050->273|1064->279|1124->318|1176->344|1190->350|1251->391|1348->461|1376->468|1409->474
+                  DATE: Sun Jan 10 11:09:09 HKT 2016
+                  SOURCE: /Volumes/jetD_YD/ReservationSystem/app/views/main.scala.html
+                  HASH: 4ba903d760d284f8dc7d3913dd5217f6e144972c
+                  MATRIX: 530->1|655->31|682->32|768->92|793->97|881->159|895->165|957->206|1044->267|1058->273|1118->312|1169->337|1183->343|1244->384|1338->451|1366->458|1398->463
                   LINES: 20->1|25->1|26->2|29->5|29->5|30->6|30->6|30->6|31->7|31->7|31->7|32->8|32->8|32->8|35->11|35->11|36->12
                   -- GENERATED --
               */

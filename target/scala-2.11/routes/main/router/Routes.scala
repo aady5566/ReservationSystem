@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/opt/WorkSpaceForScala/reservationsystem/conf/routes
-// @DATE:Wed Dec 16 23:01:06 GMT+08:00 2015
+// @SOURCE:/Volumes/jetD_YD/ReservationSystem/conf/routes
+// @DATE:Sun Jan 10 12:08:59 HKT 2016
 
 package router
 
@@ -51,6 +51,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """uploadSchedule""", """controllers.Producer.uploadSchedule"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """manager""", """controllers.Producer.manager"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """manager""", """controllers.Producer.uploadSchedule"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """send.scala.html""", """controllers.Producer.send"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -143,6 +144,23 @@ class Routes(
     )
   )
 
+  // @LINE:15
+  private[this] lazy val controllers_Producer_send5_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("send.scala.html")))
+  )
+  private[this] lazy val controllers_Producer_send5_invoker = createInvoker(
+    Producer_0.send,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Producer",
+      "send",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """send.scala.html"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -174,6 +192,12 @@ class Routes(
     case controllers_Producer_uploadSchedule4_route(params) =>
       call { 
         controllers_Producer_uploadSchedule4_invoker.call(Producer_0.uploadSchedule)
+      }
+  
+    // @LINE:15
+    case controllers_Producer_send5_route(params) =>
+      call { 
+        controllers_Producer_send5_invoker.call(Producer_0.send)
       }
   }
 }

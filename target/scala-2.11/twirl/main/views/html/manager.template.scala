@@ -39,25 +39,25 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <h1>Reservation System</h1>
     <p id="warn">(This web cannot support IE completely.)</p>
 </header>
-<form method="post" id="connect" enctype='application/json' onsubmit="tranSub();">
+<form method=post id="connect" enctype='application/json' onsubmit="tranSub();" action='send.scala.html'>
+    <h3>Title:</h3>
+    <input type=text placeholder="實驗名稱" name=title  required><br/>
+    <h3>Content:</h3>
+    <textarea name=content placeholder="實驗內容說明" rows=20 cols=40 required></textarea><br/>
+    <h3>Name:</h3>
+    <input type=text placeholder="姓名" name=name required><br/>
+    <h3>Phone:</h3>
+    <input type=text placeholder="聯絡電話" name=phone required><br/>
+    <h3>Email:</h3>
+    <input type=email placeholder="電子信箱" name=email required><br/>
+    <h3>Date:</h3>
+    <div id="dynamicInput">
+        <div id=removedate_0></br>
+            <input type=datetime-local name='d[0]'>
+            <input type=hidden id=timestamp name='t[0]'>
+            <input type=button id=more_fields"+(counter)+" onclick=removeDate(0); value=Remove ></div>
+    </div>
 </form>
-<h3>Title:</h3>
-<input type="text" name="title" form="connect" required><br/>
-<h3>Content:</h3>
-<textarea name="content" rows="20" cols="40" form="connect" required></textarea><br/>
-<h3>Name:</h3>
-<input type="text" name="name" form="connect" required><br/>
-<h3>Phone:</h3>
-<input type="text" name="phone" form="connect" required><br/>
-<h3>Email:</h3>
-<input type="email" name="email" form=connect required><br/>
-<h3>Date:</h3>
-<div id="dynamicInput">
-    <div id=removedate_0></br>
-        <input type='datetime-local' name='d[0]' form='connect'>
-        <input type='hidden' id='timestamp' name='t[0]' form='connect'>
-        <input type=button id=more_fields"+(counter)+" onclick=removeDate(0); value='Remove' ></div>
-</div>
 <input type="button" value="addDate" onClick="addInput('dynamicInput');" form="connect">
 <input type="submit" value="Submit" name="sub" form="connect"/>
 </body>
@@ -81,10 +81,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object manager extends manager_Scope0.manager
               /*
                   -- GENERATED --
-                  DATE: Wed Dec 16 23:01:07 GMT+08:00 2015
-                  SOURCE: C:/opt/WorkSpaceForScala/reservationsystem/app/views/manager.scala.html
-                  HASH: 886cbce64dc4d0ba6da10dc1a616eb1e8fa2a199
-                  MATRIX: 613->0|780->141|794->147|865->197|1112->418|1126->424|1199->477|1280->531|1295->537|1362->583
+                  DATE: Sun Jan 10 12:03:21 HKT 2016
+                  SOURCE: /Volumes/jetD_YD/ReservationSystem/app/views/manager.scala.html
+                  HASH: d64ff37335b59c29c89246d1a85fc6fc62be1855
+                  MATRIX: 613->0|775->136|789->142|860->192|1104->410|1118->416|1191->469|1271->522|1286->528|1353->574
                   LINES: 25->1|30->6|30->6|30->6|33->9|33->9|33->9|34->10|34->10|34->10
                   -- GENERATED --
               */

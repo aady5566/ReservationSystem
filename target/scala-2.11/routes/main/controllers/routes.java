@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/opt/WorkSpaceForScala/reservationsystem/conf/routes
-// @DATE:Wed Dec 16 23:01:06 GMT+08:00 2015
+// @SOURCE:/Volumes/jetD_YD/ReservationSystem/conf/routes
+// @DATE:Sun Jan 10 12:08:59 HKT 2016
 
 package controllers;
 

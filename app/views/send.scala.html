@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/send_style.css")">
+    <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+    <header>
+       <h1>Reservation System</h1>
+       <h2>Your Reservation Website is made!</h2>
+       <p id=warn>(This web cannot support IE completely.)</p>
+    </header>
+      <form method=post id="connect" enctype='application/json' onsubmit="tranSub();">
+      <h3>Website Link:</h3>
+      <p id=link></p>
+      <h4 id=deleteInfo>You can only have one website for each NTU email, if you want another one, just delete the present one as below:</h4>
+
+      <h3>Email:</h3>
+      <input type=email placeholder="電子信箱" name=email required><br/>
+      <h3>Password:</h3>
+      <input type=password placeholder="密碼" name=pw id=password  required>
+      <input type=password placeholder="密碼驗證" name=pwConfirm id=confirm_password required>
+      </form>
+      <input type=submit value=Delete name=sub form=connect>
+      <button>Get JSON data</button>
+	</body>
+</html>

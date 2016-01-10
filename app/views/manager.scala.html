@@ -15,25 +15,25 @@
     <h1>Reservation System</h1>
     <p id="warn">(This web cannot support IE completely.)</p>
 </header>
-<form method="post" id="connect" enctype='application/json' onsubmit="tranSub();">
+<form method=post id="connect" enctype='application/json' onsubmit="tranSub();" action='send.scala.html'>
+    <h3>Title:</h3>
+    <input type=text placeholder="實驗名稱" name=title  required><br/>
+    <h3>Content:</h3>
+    <textarea name=content placeholder="實驗內容說明" rows=20 cols=40 required></textarea><br/>
+    <h3>Name:</h3>
+    <input type=text placeholder="姓名" name=name required><br/>
+    <h3>Phone:</h3>
+    <input type=text placeholder="聯絡電話" name=phone required><br/>
+    <h3>Email:</h3>
+    <input type=email placeholder="電子信箱" name=email required><br/>
+    <h3>Date:</h3>
+    <div id="dynamicInput">
+        <div id=removedate_0></br>
+            <input type=datetime-local name='d[0]'>
+            <input type=hidden id=timestamp name='t[0]'>
+            <input type=button id=more_fields"+(counter)+" onclick=removeDate(0); value=Remove ></div>
+    </div>
 </form>
-<h3>Title:</h3>
-<input type="text" name="title" form="connect" required><br/>
-<h3>Content:</h3>
-<textarea name="content" rows="20" cols="40" form="connect" required></textarea><br/>
-<h3>Name:</h3>
-<input type="text" name="name" form="connect" required><br/>
-<h3>Phone:</h3>
-<input type="text" name="phone" form="connect" required><br/>
-<h3>Email:</h3>
-<input type="email" name="email" form=connect required><br/>
-<h3>Date:</h3>
-<div id="dynamicInput">
-    <div id=removedate_0></br>
-        <input type='datetime-local' name='d[0]' form='connect'>
-        <input type='hidden' id='timestamp' name='t[0]' form='connect'>
-        <input type=button id=more_fields"+(counter)+" onclick=removeDate(0); value='Remove' ></div>
-</div>
 <input type="button" value="addDate" onClick="addInput('dynamicInput');" form="connect">
 <input type="submit" value="Submit" name="sub" form="connect"/>
 </body>

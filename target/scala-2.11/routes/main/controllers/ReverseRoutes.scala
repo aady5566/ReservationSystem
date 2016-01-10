@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/opt/WorkSpaceForScala/reservationsystem/conf/routes
-// @DATE:Wed Dec 16 23:01:06 GMT+08:00 2015
+// @SOURCE:/Volumes/jetD_YD/ReservationSystem/conf/routes
+// @DATE:Sun Jan 10 12:08:59 HKT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -23,6 +23,12 @@ package controllers {
     def manager(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "manager")
+    }
+  
+    // @LINE:15
+    def send(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "send.scala.html")
     }
   
     // @LINE:11

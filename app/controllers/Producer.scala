@@ -97,6 +97,10 @@ class Producer extends Controller {
 
     Ok(views.html.manager())
   }
+  def send()=Action {
+
+    Ok(views.html.send())
+  }
 
 
 }

@@ -36,5 +36,20 @@ function tranSub(){
     document.getElementsByName("t[" + counterArray[i] + "]")[0].setAttribute('value',num);
     console.log(document.getElementsByName("t[" + counterArray[i] + "]")[0].value);
     document.getElementsByName("d[" + counterArray[i] + "]")[0].remove();
+    form.submit();
+    form.action='send.scala.html';
   }
+}
+window.onload=function(){
+  var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
+  function validatePassword(){
+    if(password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+      confirm_password.setCustomValidity('');
+    }
+  }
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
 }
