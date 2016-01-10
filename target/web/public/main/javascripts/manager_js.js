@@ -36,8 +36,6 @@ function tranSub(){
     document.getElementsByName("t[" + counterArray[i] + "]")[0].setAttribute('value',num);
     console.log(document.getElementsByName("t[" + counterArray[i] + "]")[0].value);
     document.getElementsByName("d[" + counterArray[i] + "]")[0].remove();
-    form.submit();
-    form.action='send.scala.html';
   }
 }
 window.onload=function(){

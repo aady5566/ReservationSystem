@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Volumes/jetD_YD/ReservationSystem/conf/routes
-// @DATE:Sun Jan 10 12:08:59 HKT 2016
+// @DATE:Sun Jan 10 12:51:03 HKT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -25,10 +25,10 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "manager")
     }
   
-    // @LINE:15
+    // @LINE:16
     def send(): Call = {
       import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "send.scala.html")
+      Call("GET", _prefix + { _defaultPrefix } + "send")
     }
   
     // @LINE:11

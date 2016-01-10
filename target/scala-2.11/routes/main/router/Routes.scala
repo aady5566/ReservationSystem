@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Volumes/jetD_YD/ReservationSystem/conf/routes
-// @DATE:Sun Jan 10 12:08:59 HKT 2016
+// @DATE:Sun Jan 10 12:51:03 HKT 2016
 
 package router
 
@@ -51,7 +51,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """uploadSchedule""", """controllers.Producer.uploadSchedule"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """manager""", """controllers.Producer.manager"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """manager""", """controllers.Producer.uploadSchedule"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """send.scala.html""", """controllers.Producer.send"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """send""", """controllers.Producer.send"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -144,9 +144,9 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_Producer_send5_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("send.scala.html")))
+  // @LINE:16
+  private[this] lazy val controllers_Producer_send5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("send")))
   )
   private[this] lazy val controllers_Producer_send5_invoker = createInvoker(
     Producer_0.send,
@@ -155,9 +155,9 @@ class Routes(
       "controllers.Producer",
       "send",
       Nil,
-      "POST",
+      "GET",
       """""",
-      this.prefix + """send.scala.html"""
+      this.prefix + """send"""
     )
   )
 
@@ -194,7 +194,7 @@ class Routes(
         controllers_Producer_uploadSchedule4_invoker.call(Producer_0.uploadSchedule)
       }
   
-    // @LINE:15
+    // @LINE:16
     case controllers_Producer_send5_route(params) =>
       call { 
         controllers_Producer_send5_invoker.call(Producer_0.send)

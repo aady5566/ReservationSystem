@@ -39,7 +39,7 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <h1>Reservation System</h1>
     <p id="warn">(This web cannot support IE completely.)</p>
 </header>
-<form method=post id="connect" enctype='application/json' onsubmit="tranSub();" action='send.scala.html'>
+<form method=post id="connect" enctype='application/json' onsubmit="tranSub(); " >
     <h3>Title:</h3>
     <input type=text placeholder="實驗名稱" name=title  required><br/>
     <h3>Content:</h3>
@@ -50,6 +50,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
     <input type=text placeholder="聯絡電話" name=phone required><br/>
     <h3>Email:</h3>
     <input type=email placeholder="電子信箱" name=email required><br/>
+    <h3>Password:</h3>
+    <input type=password placeholder="密碼" name=pw id=password  required>
+    <input type=password placeholder="密碼驗證" name=pwConfirm id=confirm_password required>
     <h3>Date:</h3>
     <div id="dynamicInput">
         <div id=removedate_0></br>
@@ -81,9 +84,9 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object manager extends manager_Scope0.manager
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 10 12:03:21 HKT 2016
+                  DATE: Sun Jan 10 12:49:39 HKT 2016
                   SOURCE: /Volumes/jetD_YD/ReservationSystem/app/views/manager.scala.html
-                  HASH: d64ff37335b59c29c89246d1a85fc6fc62be1855
+                  HASH: 9536e874975efa8a40c9eb32fadfa63bb575c55d
                   MATRIX: 613->0|775->136|789->142|860->192|1104->410|1118->416|1191->469|1271->522|1286->528|1353->574
                   LINES: 25->1|30->6|30->6|30->6|33->9|33->9|33->9|34->10|34->10|34->10
                   -- GENERATED --

@@ -38,16 +38,18 @@ class Producer extends Controller {
       import play.api.data._
       import play.api.data.Forms._
 
-//      case class produceExperimentSchedule(title:String,content:String,name:String,email:String,phone:String
-//                                           ,t:List[Long]
-//                                            )
-      //case class produceExperimentSchedule(title:String,content:String)
+      case class produceExperimentSchedule(title:String,content:String,name:String,email:String,phone:String,pw:String,pwConfirm:String
+                                           ,t:List[Long]
+                                            )
+     // case class produceExperimentSchedule(title:String,content:String)
       val scheduleForm = Form(mapping(
         "title"->nonEmptyText,
         "content"->nonEmptyText,
         "name"->nonEmptyText,
         "email"->email,
         "phone"->nonEmptyText,
+      "pw"->text,
+      "pwConfirm"->text,
         "t"->list(longNumber)
       )(produceExperimentSchedule.apply)(produceExperimentSchedule.unapply))
 
@@ -68,6 +70,8 @@ class Producer extends Controller {
             .withString("content", scheduleData.content)
             .withString("name", scheduleData.name)
             .withString("phone", scheduleData.phone)
+        .withString("pw", scheduleData.pw)
+        .withString("pwConfirm", scheduleData.pwConfirm)
             .withList("time", javaList )
 
       val outcome = table.putItem(item)

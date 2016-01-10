@@ -12,4 +12,5 @@ POST    /uploadSchedule             controllers.Producer.uploadSchedule
 
 GET     /manager                    controllers.Producer.manager
 POST    /manager                    controllers.Producer.uploadSchedule
-POST    /send.scala.html            controllers.Producer.send
+
+GET    /send             controllers.Producer.send
